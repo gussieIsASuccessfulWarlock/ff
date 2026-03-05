@@ -1,4 +1,4 @@
-# ff — Fast Finder
+# Fast Finder (ff)
 
 A single-binary filesystem tool for Linux. Find files, hash everything, detect changes, and monitor the filesystem in real time.
 
