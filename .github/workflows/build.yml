@@ -105,7 +105,7 @@ jobs:
 
       - name: Run JSON test
         run: |
-          ./target/release/ff --json Cargo.toml . | python3 -m json.tool --no-ensure-ascii > /dev/null
+          ./target/release/ff --json Cargo.toml . | while IFS= read -r line; do echo "$line" | python3 -m json.tool > /dev/null; done
 
   # Create release when a tag is pushed
   release:
